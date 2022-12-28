@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pragmatic_Spring.iml" filepath="$PROJECT_DIR$/.idea/Pragmatic_Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos/first_api/api/api.iml" filepath="$PROJECT_DIR$/Proyectos/first_api/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proyectos/cursospringboot/cursospringboot.iml" filepath="$PROJECT_DIR$/Proyectos/cursospringboot/cursospringboot.iml" />
+    </modules>
+  </component>
+</project>
