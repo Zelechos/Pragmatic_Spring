@@ -3,7 +3,7 @@ Un repositorio con codigo de el Framework usando Java con Spring
 
 Terminar todas la guias de [Getting Started](https://spring.io/guides#gettingStarted)
 
-- [ ] Building a RESTful Web Service
+- [X] Building a RESTful Web Service
 Learn how to create a RESTful web service with Spring.
 
 - [ ] Consuming a RESTful Web Service
