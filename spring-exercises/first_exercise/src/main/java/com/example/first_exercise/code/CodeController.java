@@ -18,8 +18,9 @@ public class CodeController {
         ArrayList<String> helloWorld = new ArrayList<>();
         helloWorld.add("print('hello world')");
         helloWorld.add("console.log('hello world')");
+        helloWorld.add("System.out.println('Hello World');");
 
-        if (currentIndex == 0 || currentIndex == 1) return new Code(
+        if (currentIndex < helloWorld.size()) return new Code(
                 count.incrementAndGet(),
                 helloWorld.get((int) currentIndex)
         );
