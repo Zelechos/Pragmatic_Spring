@@ -12,20 +12,28 @@ import java.util.concurrent.atomic.AtomicLong;
 @RestController
 public class ProductController {
 
-//    public List<Product> products = new ArrayList<>();
     private final AtomicLong counter = new AtomicLong();
 
+    private final List<Product> products = new ArrayList<>();
+
     @GetMapping("/product")
-    public List<Product> product(@RequestParam(value="name", defaultValue = "undefinedNameOfSoftware") String name) throws IOException {
-        return new Project().createProject(name,counter);
+    public List<Product> product(
+            @RequestParam(value = "name", defaultValue = "undefinedNameOfSoftware")
+            String name, String softwareType, double price, String timeOfDevelopment
+    ) throws IOException {
+        return new Project().createProject(name, softwareType, price, timeOfDevelopment, counter);
     }
 
-//    @GetMapping("/product")
-//    public Product getOneProduct(@RequestParam(value="id", defaultValue = "0") long id){
-//        return this.getProduct(id);
-//    }
+    @GetMapping("/developers")
+    public List<String> getAllDevelopers(@RequestParam(value="name", defaultValue = "none")String name) throws IOException {
+        return new Project().getDevelopers();
+    }
 
 
+    @GetMapping("/technologies")
+    public List<String> getAllTechnologies(@RequestParam(value="name", defaultValue = "none")String name) {
+        return new Project().getTechnologies();
+    }
 
 
 }
