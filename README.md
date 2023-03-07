@@ -6,7 +6,7 @@ Terminar todas la guias de [Getting Started](https://spring.io/guides#gettingSta
 - [X] Building a RESTful Web Service
 Learn how to create a RESTful web service with Spring.
 
-- [ ] Consuming a RESTful Web Service
+- [X] Consuming a RESTful Web Service
 Learn how to retrieve web page data with Spring's RestTemplate.
 
 - [ ] Scheduling Tasks
