@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7811a66b-7689-4f53-aa9f-b70e9e4aac3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-exercises/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/example/Quote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/example/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/quoters" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise (1).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/src/main/java/com/example/second_exercise/Quote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/src/main/java/com/example/second_exercise/SecondExerciseApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/src/main/java/com/example/second_exercise/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-exercises/second_exercise/src/test/java/com/example/second_exercise/SecondExerciseApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/src/main/java/com/pragmatic/spring/main/IntroductionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/src/main/java/com/pragmatic/spring/main/hello_world/HelloWorldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-course/Introduction/src/test/java/com/pragmatic/spring/main/IntroductionApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;L:/Repositorios/Pragmatic_Spring&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "L:/Repositorios/Pragmatic_Spring/spring-course",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
