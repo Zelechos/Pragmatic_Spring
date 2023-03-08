@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Introduction/Introduction.iml" filepath="$PROJECT_DIR$/Introduction/Introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Introduction/Thymeleaf.iml" filepath="$PROJECT_DIR$/Introduction/Thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-course.iml" filepath="$PROJECT_DIR$/.idea/spring-course.iml" />
     </modules>
   </component>
