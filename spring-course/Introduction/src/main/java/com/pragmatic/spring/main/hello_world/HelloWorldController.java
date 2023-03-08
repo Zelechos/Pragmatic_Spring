@@ -17,6 +17,7 @@ public class HelloWorldController {
     @GetMapping("/sub")
     public String subtitle() {
         log.info("execute the subtitle of the code");
+        log.debug("mas detalle del controlador");
         return "<hr/><h3>The project Spring is the Best<h3>";
     }
 
