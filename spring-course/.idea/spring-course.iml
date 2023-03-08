@@ -2,8 +2,23 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Thymeleaf/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Thymeleaf/src/test/java" isTestSource="true" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:6.0.6" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
