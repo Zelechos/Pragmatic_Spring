@@ -1,5 +1,6 @@
 package carservice.car.entity;
 
+
 import jakarta.persistence.*;
 
 @Entity
@@ -19,6 +20,7 @@ public class Car {
 
     @Column(name = "userId", nullable = false)
     private int userId;
+
 
     public Car() {
     }

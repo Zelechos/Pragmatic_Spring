@@ -35,7 +35,7 @@ public class CarController {
         return ResponseEntity.ok(carService.save(car));
     }
 
-    @GetMapping("/user/{userId}")
+    @GetMapping("/users/{userId}")
     public ResponseEntity<List<Car>> getAllCarsByUser(@PathVariable("userId") int userId) {
         return (carService.getAllCarsByUserId(userId).isEmpty())
                 ? ResponseEntity.noContent().build()
