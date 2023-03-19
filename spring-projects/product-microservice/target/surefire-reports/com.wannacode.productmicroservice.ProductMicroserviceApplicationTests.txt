@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.wannacode.productmicroservice.ProductMicroserviceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.284 s - in com.wannacode.productmicroservice.ProductMicroserviceApplicationTests
