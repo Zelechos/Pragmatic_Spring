@@ -1,4 +1,6 @@
 package com.pragmatic.spring.main.cyberpunk;
 
-public class CyberPunkModel {
+
+public record CyberPunkModel(int year, String reality) {
+
 }
