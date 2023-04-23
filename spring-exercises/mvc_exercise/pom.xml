@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pragmatic.spring</groupId>
-	<artifactId>Thymeleaf</artifactId>
+	<artifactId>mvc_exercise</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Introduction</name>
 	<description>Introduction of Spring</description>
