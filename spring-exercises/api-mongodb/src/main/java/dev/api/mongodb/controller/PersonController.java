@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -36,7 +35,7 @@ public class PersonController {
     }
 
     @PutMapping("/")
-    public void update(@RequestBody Person person){
+    public void update(@RequestBody Person person) {
         personService.save(person);
     }
 
