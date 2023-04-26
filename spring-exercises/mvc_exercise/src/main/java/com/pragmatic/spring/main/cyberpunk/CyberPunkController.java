@@ -11,7 +11,6 @@ import java.util.List;
 @Slf4j
 public class CyberPunkController {
 
-
     @GetMapping("/")
     public String send(Model model) {
         CyberPunkModel state = new CyberPunkModel(2045, "desire");

@@ -15,11 +15,8 @@ public class SectorController {
 
     @GetMapping("/sectors")
     public String getAllReports(Model model) {
-
         model.addAttribute("sectors", factorySectors());
-
         log.info("report to the Sectors");
-
         return "SectorView";
     }
 
@@ -29,7 +26,6 @@ public class SectorController {
             if (sector.getId() == id) {
                 model.addAttribute("sector", sector);
                 log.info("report to the --> " + sector);
-
             }
         });
         return "SectorView";
@@ -47,7 +43,6 @@ public class SectorController {
         var thirdSector = new SectorModel(
                 0, "Sector Zero", "75 years", "Transmutation - Transmutation", "Create a android to domain the world"
         );
-
         return Arrays.asList(sector, secondSector, thirdSector);
     }
 }
