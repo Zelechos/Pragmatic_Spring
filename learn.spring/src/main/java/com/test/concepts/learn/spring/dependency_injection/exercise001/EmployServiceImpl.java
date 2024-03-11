@@ -6,6 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+/**
+ * Learn Dependency Injection
+ *
+ * @author Alex T.H.
+ * @version v0.0.5
+ * @since 21.0.0 2024-02-07
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
