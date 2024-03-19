@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SoftwareEngineer {
+
     private Skills skills;
 
     @Autowired
