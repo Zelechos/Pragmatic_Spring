@@ -13,10 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Data
 public class App {
 
-    private  IA area;
+    private IA area;
 
     @Autowired
-    public App (IA area){
+    public App(IA area) {
         this.area = area;
     }
 }

@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
 @Component
 public class EmployServiceImpl implements EmployService{
 
@@ -35,6 +34,11 @@ public class EmployServiceImpl implements EmployService{
         return personalInformation.append("Name : ").append(this.getName()).append(" \n")
                 .append("Age : ").append(this.getAge()).append(" \n")
                 .append("Profession : ").append(this.getProfession()).append(" \n");
+    }
+
+    @Override
+    public String generatePDfBase64() {
+        return "Pdf Generated : ["+this+"]";
     }
 
 }

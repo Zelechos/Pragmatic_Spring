@@ -11,10 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version v0.0.7
  * @since 21.0.0 2024-02-08
  */
-@SpringBootApplication
 public class LocalMain {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
         Engine engine = new Engine("ether","v0.0.7", true);
         System.out.println(engine);
     }

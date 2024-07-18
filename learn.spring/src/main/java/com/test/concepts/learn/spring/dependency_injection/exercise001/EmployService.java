@@ -10,5 +10,6 @@ package com.test.concepts.learn.spring.dependency_injection.exercise001;
 public interface EmployService {
     void working();
     StringBuilder getPersonalInformation();
+    String generatePDfBase64();
 }
 

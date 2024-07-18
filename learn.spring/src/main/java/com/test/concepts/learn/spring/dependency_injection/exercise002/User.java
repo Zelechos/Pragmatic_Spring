@@ -27,9 +27,13 @@ public class User {
     @Autowired
     private MessengerService messengerService;
 
+    @Autowired
+    private DocumentService documentService;
+
     /**
      * @AllArgsConstructor
-     *  public User(AuthorizationService authorizationService, EncryptService encryptService, MessengerService messengerService){
+     *  public User(AuthorizationService authorizationService, EncryptService encryptService,
+     *  MessengerService messengerService, DocumentService documentService){
      *      some code ..
      *      this.authorizationService = authorizationService;
      *      this.authorizationService = authorizationService;

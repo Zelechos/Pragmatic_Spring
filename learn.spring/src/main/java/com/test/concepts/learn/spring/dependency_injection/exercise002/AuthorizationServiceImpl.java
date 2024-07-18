@@ -15,7 +15,6 @@ import java.util.UUID;
  * @version v0.0.5
  * @since 21.0.0 2024-02-07
  */
-@Getter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

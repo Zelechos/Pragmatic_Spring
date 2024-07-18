@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @version v0.0.5
  * @since 21.0.0 2024-02-08
  */
-@Getter
-@Setter
 @Data
 @NoArgsConstructor
 public class Employe {
