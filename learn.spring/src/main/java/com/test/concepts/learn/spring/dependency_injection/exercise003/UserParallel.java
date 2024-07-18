@@ -14,15 +14,20 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class UserParallel {
 
     private Work work;
+    private DataSource data;
 
     @Autowired
     public void showWorker(Work work) {
         System.out.println("Courses => " + work.courses());
         System.out.println("Programming Languages => " + work.programmingLanguages());
         System.out.println("Years of Experience => " + work.yearOfExperience());
+    }
+
+    @Autowired
+    public String showDataSource(DataSource data){
+       return data.stateOfData();
     }
 }

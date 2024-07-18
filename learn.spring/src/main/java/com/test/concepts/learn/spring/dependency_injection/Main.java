@@ -4,9 +4,7 @@ import com.test.concepts.learn.spring.dependency_injection.exercise001.EmploySer
 import com.test.concepts.learn.spring.dependency_injection.exercise001.EmployServiceImpl;
 import com.test.concepts.learn.spring.dependency_injection.exercise001.Employe;
 import com.test.concepts.learn.spring.dependency_injection.exercise002.*;
-import com.test.concepts.learn.spring.dependency_injection.exercise003.Programmer;
-import com.test.concepts.learn.spring.dependency_injection.exercise003.UserParallel;
-import com.test.concepts.learn.spring.dependency_injection.exercise003.Work;
+import com.test.concepts.learn.spring.dependency_injection.exercise003.*;
 import com.test.concepts.learn.spring.dependency_injection.exercise004.Cryptographer;
 import com.test.concepts.learn.spring.dependency_injection.exercise004.HackerWork;
 import com.test.concepts.learn.spring.dependency_injection.exercise004.Skills;
@@ -18,7 +16,9 @@ import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleAcc
 import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleResponse;
 import com.test.concepts.learn.spring.dependency_injection.exercise006.SecurityService;
 import com.test.concepts.learn.spring.dependency_injection.exercise006.UserService;
+import com.test.concepts.learn.spring.dependency_injection.exercise007.*;
 
+import javax.xml.crypto.Data;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -89,8 +89,10 @@ public class Main {
         // Dependency injection from Methods
         // NOT Recommended use @Autowired annotation !
         Work work = new Programmer(4);
+        DataSource data = new UserInfoService();
         UserParallel userParallel = new UserParallel();
         userParallel.showWorker(work);
+        System.out.println(userParallel.showDataSource(data));
 
         System.out.println("--------------------Dependency Injection in Setters ---------------------------");
         // Dependency injection from Setters
@@ -115,6 +117,32 @@ public class Main {
         System.out.println(areas.name());
         System.out.println(areas.getNaturalLanguageProcessing().getName());
         System.out.println(areas.getComputerVision().name());
+
+        System.out.println("-----------Dependency Injection with @Qualifier Annotation exercise007-----------");
+        // Use @Qualifier Annotation to define a Bean Inject
+        Kali kali = new Kali();
+        Parrot parrot = new Parrot();
+        BlackArch blackArch = new BlackArch();
+
+        // Constructor injection
+        SO so = new SO(kali);
+        so.showName();
+        so.showDescription();
+
+        // Field injection
+        SO so1 = new SO();
+        so1.so_001 = parrot;
+        System.out.println(so1.so_001.name());
+        System.out.println(so1.so_001.description());
+
+        // Setter injection
+        so.setSo(blackArch);
+        so.showName();
+        so.showDescription();
+
+        // Method Injection
+        so.showSecuritySOInfo(new Security());
+
 
     }
 

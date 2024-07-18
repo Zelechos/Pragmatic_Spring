@@ -3,8 +3,7 @@ package com.test.concepts.learn.spring.dependency_injection.exercise005;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Service;
-
+import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 
 /**
@@ -17,7 +16,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Service
+@Component("ComputerVision")
 public class ComputerVision implements AreaIA{
 
     private String name;
