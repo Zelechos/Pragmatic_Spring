@@ -14,6 +14,10 @@ import com.test.concepts.learn.spring.dependency_injection.exercise004.SoftwareE
 import com.test.concepts.learn.spring.dependency_injection.exercise005.AreasOfIA;
 import com.test.concepts.learn.spring.dependency_injection.exercise005.ComputerVision;
 import com.test.concepts.learn.spring.dependency_injection.exercise005.NaturalLanguageProcessing;
+import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleAccountRepository;
+import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleResponse;
+import com.test.concepts.learn.spring.dependency_injection.exercise006.SecurityService;
+import com.test.concepts.learn.spring.dependency_injection.exercise006.UserService;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -22,8 +26,8 @@ import java.util.UUID;
  * Learn Dependency Injection
  *
  * @author Alex T.H.
- * @version v0.1.1
- * @since 21.0.0 2024-07-16
+ * @version v0.1.2
+ * @since 21.0.0 2024-07-18
  */
 public class Main {
 
@@ -37,6 +41,20 @@ public class Main {
         employe.getEmployeService().working();
         System.out.println(employe.getEmployeService().getPersonalInformation().toString());
         System.out.println(employe.getEmployeService().generatePDfBase64());
+
+        // Exercise 006
+        OracleAccountRepository oracleAccountRepository = new OracleAccountRepository();
+        oracleAccountRepository.setUser("EthelTH");
+        oracleAccountRepository.setPassword("Hack<@>Morph");
+        SecurityService securityService = new SecurityService();
+        securityService.getSercurityInfo();
+        UserService userService = new UserService(oracleAccountRepository, securityService);
+        System.out.println(userService);
+        System.out.println(userService.getSecurityService().getSercurityInfo());
+        System.out.println(userService.getOracleAccountRepository().save());
+        System.out.println(userService.getOracleAccountRepository().get());
+        System.out.println(userService.getOracleAccountRepository().getUser());
+        System.out.println(userService.getOracleAccountRepository().delete());
 
         System.out.println("--------------------Dependency Injection in Fields---------------------------");
         // Dependency injection from Fields
@@ -98,11 +116,6 @@ public class Main {
         System.out.println(areas.getNaturalLanguageProcessing().getName());
         System.out.println(areas.getComputerVision().name());
 
-        Main.hell();
-
     }
 
-    static final String hell() {
-        return "hello from final method";
-    }
 }

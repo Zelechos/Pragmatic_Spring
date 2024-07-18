@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
  * @since 21.0.0 2024-02-07
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Component
 public class EmployServiceImpl implements EmployService{
 

@@ -14,12 +14,11 @@ import java.time.LocalDateTime;
  * @since 21.0.0 2024-07-16
  */
 @Data
-@NoArgsConstructor
 @Service
 public class PaymentServiceImpl extends PaymentService implements AccountRepository {
 
     private double amount;
-    private AccountRepository accountRepository;
+    private final AccountRepository accountRepository;
 
     public PaymentServiceImpl(AccountRepository accountRepository){
         this.accountRepository = accountRepository;

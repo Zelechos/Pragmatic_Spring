@@ -2,6 +2,7 @@ package com.test.concepts.learn.spring.dependency_injection.exercise001;
 
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 
 /**
@@ -12,10 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @since 21.0.0 2024-02-08
  */
 @Data
-@NoArgsConstructor
+@Component
 public class Employe {
 
-    private EmployService employeService;
+    private final EmployService employeService;
 
     // Inyeccion de Dependencia mediante el constructor
     @Autowired
