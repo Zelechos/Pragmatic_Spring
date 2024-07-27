@@ -12,7 +12,7 @@ public abstract class PaymentService {
     private double amount;
     private String paymentType;
 
-    public double calculatePayment(double amount){
+    public double calculatePayment(double amount) {
         return amount * Math.random();
     }
 

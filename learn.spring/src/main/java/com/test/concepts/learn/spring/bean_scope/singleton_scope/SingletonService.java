@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * @since 21.0.0 2024-02-18
  */
 @Service
-//@Scope("singleton") El scope singleton si inicia por defecto en cualquier Bean por esto no est necesario anotarlo
+//@Scope("singleton") El scope singleton es el scope por defecto en cualquier Bean, no es necesario anotarlo
 public class SingletonService {
 
     public void serve() {

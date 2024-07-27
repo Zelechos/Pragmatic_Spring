@@ -1,7 +1,8 @@
 package com.test.concepts.learn.spring.bean_scope.application_scope;
 
 import lombok.Data;
-import org.springframework.stereotype.Component;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.ApplicationScope;
 
 /**
@@ -12,14 +13,15 @@ import org.springframework.web.context.annotation.ApplicationScope;
  * @since 21.0.0 2024-07-27
  */
 @Data
-@Component
+@NoArgsConstructor
+@Service
 @ApplicationScope
-public class ApplicationScopedBean {
+public class StatusAppService implements StatusService{
 
-    private int counter = 0;
+    private StatusApp statusApp;
 
-    public void incrementCounter() {
-        counter++;
+    @Override
+    public String getStatus() {
+        return statusApp.name();
     }
-
 }

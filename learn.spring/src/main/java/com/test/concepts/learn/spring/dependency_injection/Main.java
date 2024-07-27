@@ -13,12 +13,15 @@ import com.test.concepts.learn.spring.dependency_injection.exercise005.AreasOfIA
 import com.test.concepts.learn.spring.dependency_injection.exercise005.ComputerVision;
 import com.test.concepts.learn.spring.dependency_injection.exercise005.NaturalLanguageProcessing;
 import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleAccountRepository;
-import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleResponse;
 import com.test.concepts.learn.spring.dependency_injection.exercise006.SecurityService;
 import com.test.concepts.learn.spring.dependency_injection.exercise006.UserService;
 import com.test.concepts.learn.spring.dependency_injection.exercise007.*;
+import com.test.concepts.learn.spring.dependency_injection.exercise008.BdImpl;
+import com.test.concepts.learn.spring.dependency_injection.exercise008.ElasticSearch;
+import com.test.concepts.learn.spring.dependency_injection.exercise008.MySql;
+import com.test.concepts.learn.spring.dependency_injection.exercise008.PostgreSql;
+import com.test.concepts.learn.spring.dependency_injection.exercise009.*;
 
-import javax.xml.crypto.Data;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -26,8 +29,8 @@ import java.util.UUID;
  * Learn Dependency Injection
  *
  * @author Alex T.H.
- * @version v0.1.3
- * @since 21.0.0 2024-07-18
+ * @version v0.1.6
+ * @since 21.0.0 2024-07-27
  */
 public class Main {
 
@@ -143,7 +146,27 @@ public class Main {
         // Method Injection
         so.showSecuritySOInfo(new Security());
 
+        System.out.println("-----------Dependency Injection with @Qualifier Annotation exercise008-----------");
+        MySql mySql = new MySql();
+        PostgreSql postgreSql = new PostgreSql();
+        ElasticSearch elasticSearch = new ElasticSearch();
+        BdImpl bd = new BdImpl();
+        bd.instanceElasticSearch(elasticSearch);
+        bd.instanceMySql(mySql);
+        bd.instancePostgreSql(postgreSql);
 
+
+        System.out.println("-----------Dependency Injection with @Primary Annotation exercise009-----------");
+
+        PrintService printService = new PrintService();// this is the Primary service
+        ScanService scanService = new ScanService();
+        PhotocopyService photocopyService = new PhotocopyService();
+        PrinterApp printerApp = new PrinterApp(printService);
+        PrinterApp printerApp1 = new PrinterApp(scanService);
+        PrinterApp printerApp2= new PrinterApp(photocopyService);
+        System.out.println(printerApp);
+        System.out.println(printerApp1);
+        System.out.println(printerApp2);
     }
 
 }

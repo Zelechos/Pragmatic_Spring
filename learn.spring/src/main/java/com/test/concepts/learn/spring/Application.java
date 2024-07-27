@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Learn Dependency Injection
+ * Learn Basics
  *
  * @author Alex T.H.
- * @version v0.0.5
- * @since 21.0.0 2024-02-07
+ * @version v0.0.6
+ * @since 21.0.0 2024-07-27
  */
 @SpringBootApplication
 public class Application {

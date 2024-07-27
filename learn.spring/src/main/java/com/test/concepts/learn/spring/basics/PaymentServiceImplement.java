@@ -1,7 +1,8 @@
 package com.test.concepts.learn.spring.basics;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -15,12 +16,13 @@ import java.time.LocalDateTime;
  */
 @Data
 @Service
-public class PaymentServiceImpl extends PaymentService implements AccountRepository {
+public class PaymentServiceImplement extends PaymentService implements AccountRepository {
 
     private double amount;
-    private final AccountRepository accountRepository;
+    private AccountRepository accountRepository;
 
-    public PaymentServiceImpl(AccountRepository accountRepository){
+    @Autowired
+    public PaymentServiceImplement(@Lazy AccountRepository accountRepository){
         this.accountRepository = accountRepository;
     }
 

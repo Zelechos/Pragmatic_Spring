@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-@WebSocketScope
+//@WebSocketScope
 public class WebSocketScopedBean {
 
     private int messageCount = 0;

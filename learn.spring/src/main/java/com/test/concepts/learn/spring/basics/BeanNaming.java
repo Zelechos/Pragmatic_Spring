@@ -16,13 +16,13 @@ public class BeanNaming {
     //  Ahora este Bean tiene el nombre => PaymentServiceBean
     @Bean("PaymentServiceBean")
     public PaymentService paymentService(AccountRepository accountRepository){
-        return new PaymentServiceImpl(accountRepository);
+        return new PaymentServiceImplement(accountRepository);
     }
 
     //  Por defecto este Bean tiene el nombre => accountRepositoryInjection
     @Bean
     public PaymentService accountRepositoryInjection(){
         AccountRepository accountRepository = null;
-        return new PaymentServiceImpl(accountRepository);
+        return new PaymentServiceImplement(accountRepository);
     }
 }

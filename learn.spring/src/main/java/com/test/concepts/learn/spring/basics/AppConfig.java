@@ -16,6 +16,6 @@ public class AppConfig {
 
     @Bean
     public PaymentService paymentService(AccountRepository accountRepository){
-        return new PaymentServiceImpl(accountRepository);
+        return new PaymentServiceImplement(accountRepository);
     }
 }
