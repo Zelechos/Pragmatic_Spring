@@ -4,23 +4,25 @@ import lombok.Data;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
+import org.springframework.web.socket.WebSocketSession;
 
 /**
  * Learn Bean Scope
  *
  * @author Alex T.H.
- * @version v0.1.5
- * @since 21.0.0 2024-02-18
+ * @version v0.1.7
+ * @since 21.0.0 2024-08-19
  */
 @Data
 @Component
 @Scope(scopeName = "websocket", proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class WebSocketScopedBean {
+public class WebSocketSessionData {
 
-    private int messageCount = 0;
+    private WebSocketSession session;
+    private int messageCount;
 
     public void incrementMessageCount(){
-        messageCount++;
+        this.messageCount++;
     }
 
 }

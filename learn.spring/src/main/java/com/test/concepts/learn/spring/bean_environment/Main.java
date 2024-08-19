@@ -1,2 +1,33 @@
-package com.test.concepts.learn.spring.bean_environment;public class Main {
+package com.test.concepts.learn.spring.bean_environment;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.test.concepts.learn.spring.bean_environment.exercise_000.ApiServiceModelAi;
+import com.test.concepts.learn.spring.bean_environment.exercise_000.ModelIA;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import java.util.Scanner;
+
+/**
+ * Learn Bean Environment
+ *
+ * @author Alex T.H.
+ * @version v0.1.7
+ * @since 21.0.0 2024-08-19
+ */
+@SpringBootApplication
+public class Main {
+
+    public static void main(String[] args) throws JsonProcessingException {
+        ApplicationContext context = SpringApplication.run(Main.class, args);
+//        ModelIA modelIA = context.getBean(ModelIA.class);
+//        modelIA.useModel();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce your Question : ");
+        String prompt = scanner.nextLine();
+        ApiServiceModelAi api = context.getBean(ApiServiceModelAi.class);
+        System.out.println(api.useModel(prompt));
+    }
+
 }

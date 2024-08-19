@@ -1,4 +1,4 @@
-package com.test.concepts.learn.spring.bean_environment;
+package com.test.concepts.learn.spring.bean_environment.exercise_000;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;

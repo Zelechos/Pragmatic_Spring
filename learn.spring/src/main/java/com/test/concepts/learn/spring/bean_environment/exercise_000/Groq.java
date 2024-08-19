@@ -1,6 +1,5 @@
-package com.test.concepts.learn.spring.bean_environment;
+package com.test.concepts.learn.spring.bean_environment.exercise_000;
 
-import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
