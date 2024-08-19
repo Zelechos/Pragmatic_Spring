@@ -1,6 +1,8 @@
 package com.test.concepts.learn.spring.bean_scope.websocket_scope;
 
 import lombok.Data;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-//@WebSocketScope
+@Scope(scopeName = "websocket", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class WebSocketScopedBean {
 
     private int messageCount = 0;
