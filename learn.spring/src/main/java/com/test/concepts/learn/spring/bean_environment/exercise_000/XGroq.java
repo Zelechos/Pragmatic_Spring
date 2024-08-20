@@ -1,8 +1,6 @@
 package com.test.concepts.learn.spring.bean_environment.exercise_000;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * Learn Bean Environment
@@ -12,11 +10,8 @@ import lombok.NoArgsConstructor;
  * @since 21.0.0 2024-08-20
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Message {
+public class XGroq {
 
-    private String role;
-    private String content;
+    private String id;
 
 }
