@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  * Learn Dependency Injection
  *
  * @author Alex T.H.
- * @version v0.1.6
- * @since 21.0.0 2024-07-27
+ * @version v0.1.9
+ * @since 21.0.0 2024-08-28
  */
 @Data
 @NoArgsConstructor
@@ -20,24 +20,31 @@ public class BdImpl {
 
     //Injections by Method
     @Autowired
-    public void instanceMySql(@Qualifier("MySQL") MySql mySql) {
-        System.out.println(mySql.name());
-        System.out.println(mySql.description());
-        System.out.println(mySql.use());
+    public BDSystem instanceMySql(@Qualifier("MySQL") MySql mySql) {
+        return mySql;
     }
 
     @Autowired
-    public void instancePostgreSql(@Qualifier("PostgreSQL")PostgreSql postgreSql){
-        System.out.println(postgreSql.name());
-        System.out.println(postgreSql.description());
-        System.out.println(postgreSql.use());
+    public BDSystem instancePostgreSql(@Qualifier("PostgreSQL") PostgreSql postgreSql) {
+        return postgreSql;
     }
 
     @Autowired
-    public void instanceElasticSearch(@Qualifier("Elasticsearch")ElasticSearch elasticSearch){
-        System.out.println(elasticSearch.name());
-        System.out.println(elasticSearch.description());
-        System.out.println(elasticSearch.use());
+    public BDSystem instanceElasticSearch(@Qualifier("Elasticsearch") ElasticSearch elasticSearch) {
+        return elasticSearch;
     }
 
+    @Autowired
+    @Qualifier("MongoDB") // another way to use @Qualifier annotation
+    public BDSystem instanceMongoDB(MongoDB mongoDB) {
+        return mongoDB;
+    }
+
+    public void showDBInfo(BDSystem bdSystem) {
+        System.out.println("-------------------------\n" +
+                "Name=" + bdSystem.name() + "\n" +
+                "Description=" + bdSystem.description() + "\n" +
+                "Use=" + bdSystem.use() + "\n" +
+                "-------------------------");
+    }
 }

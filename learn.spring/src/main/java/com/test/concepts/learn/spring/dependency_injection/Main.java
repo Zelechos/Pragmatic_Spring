@@ -16,10 +16,7 @@ import com.test.concepts.learn.spring.dependency_injection.exercise006.OracleAcc
 import com.test.concepts.learn.spring.dependency_injection.exercise006.SecurityService;
 import com.test.concepts.learn.spring.dependency_injection.exercise006.UserService;
 import com.test.concepts.learn.spring.dependency_injection.exercise007.*;
-import com.test.concepts.learn.spring.dependency_injection.exercise008.BdImpl;
-import com.test.concepts.learn.spring.dependency_injection.exercise008.ElasticSearch;
-import com.test.concepts.learn.spring.dependency_injection.exercise008.MySql;
-import com.test.concepts.learn.spring.dependency_injection.exercise008.PostgreSql;
+import com.test.concepts.learn.spring.dependency_injection.exercise008.*;
 import com.test.concepts.learn.spring.dependency_injection.exercise009.*;
 
 import java.time.LocalDateTime;
@@ -29,8 +26,8 @@ import java.util.UUID;
  * Learn Dependency Injection
  *
  * @author Alex T.H.
- * @version v0.1.6
- * @since 21.0.0 2024-07-27
+ * @version v0.1.9
+ * @since 21.0.0 2024-08-28
  */
 public class Main {
 
@@ -150,10 +147,12 @@ public class Main {
         MySql mySql = new MySql();
         PostgreSql postgreSql = new PostgreSql();
         ElasticSearch elasticSearch = new ElasticSearch();
+        MongoDB mongoDB = new MongoDB();
         BdImpl bd = new BdImpl();
-        bd.instanceElasticSearch(elasticSearch);
-        bd.instanceMySql(mySql);
-        bd.instancePostgreSql(postgreSql);
+        bd.showDBInfo(bd.instanceElasticSearch(elasticSearch));
+        bd.showDBInfo(bd.instanceMySql(mySql));
+        bd.showDBInfo(bd.instancePostgreSql(postgreSql));
+        bd.showDBInfo(bd.instanceMongoDB(mongoDB));
 
 
         System.out.println("-----------Dependency Injection with @Primary Annotation exercise009-----------");

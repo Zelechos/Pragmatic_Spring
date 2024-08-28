@@ -1,8 +1,6 @@
 package com.test.concepts.learn.spring.bean_environment;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.test.concepts.learn.spring.bean_environment.exercise_000.ApiServiceModelAi;
-import com.test.concepts.learn.spring.bean_environment.exercise_000.ModelIA;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
