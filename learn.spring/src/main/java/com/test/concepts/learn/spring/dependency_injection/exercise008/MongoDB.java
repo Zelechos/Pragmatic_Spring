@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @AllArgsConstructor
-//@NoArgsConstructor
 @Component("MongoDB")
 public class MongoDB implements BDSystem{
 
