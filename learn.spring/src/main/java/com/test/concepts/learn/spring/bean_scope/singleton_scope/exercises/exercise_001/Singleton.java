@@ -1,5 +1,6 @@
 package com.test.concepts.learn.spring.bean_scope.singleton_scope.exercises.exercise_001;
 
+import com.test.concepts.learn.spring.bean_scope.singleton_scope.SingletonService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,5 +19,9 @@ public class Singleton {
         return new UserService();
     }
 
+    @Bean
+    public SingletonService singletonService(){
+        return new SingletonService();
+    }
 
 }

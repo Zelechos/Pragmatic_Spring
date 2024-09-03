@@ -1,9 +1,5 @@
 package com.test.concepts.learn.spring.bean_scope.singleton_scope.exercises.exercise_001;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**
