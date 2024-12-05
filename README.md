@@ -1,17 +1,16 @@
 # Pragmatic_Spring
 Un repositorio con codigo de el Framework usando Java con Spring
 
-Terminar todas la guias de [Getting Started](https://spring.io/guides#gettingStarted)
+Terminar todas la guias de [Getting Started](https://spring.io/guides#gettingStarted) los ejercicios se encuentran en la carpeta ***spring-started***
 
 - [X] Building a RESTful Web Service
 Learn how to create a RESTful web service with Spring.
 
-- [X] Consuming a RESTful Web Service
-Learn how to retrieve web page data with Spring's RestTemplate.
-
 - [ ] Scheduling Tasks
 Learn how to schedule tasks with Spring.
 
+- [ ] Consuming a RESTful Web Service
+Learn how to retrieve web page data with Spring's RestTemplate.
 
 - [ ] Building Java Projects with Gradle
 Learn how to build a Java project with Gradle.
